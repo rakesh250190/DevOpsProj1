@@ -8,8 +8,7 @@
       state: latest
 
   - name: add user to docker group.
-    command:
-      cmd: usermod -aG docker devops
+    command: usermod -aG docker devops
 
   - name: start docker service.
     service:
