@@ -6,3 +6,8 @@
     apt:
       name: docker.io
       state: latest
+    command:
+      cmd: usermod -aG docker devops
+    service:
+      name: docker.io
+      state: Started
