@@ -11,6 +11,7 @@
     shell: usermod -aG docker devops
 
   - name: start docker service.
-    service:
-      name: docker.io
+    systemd:
+      name: docker
       state: started
+      enabled: true
