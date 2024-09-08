@@ -1,8 +1,8 @@
 ---
-- name: install docker
+- hosts: host-1
   become: yes
-  hosts: host-1
   tasks:
-  - name: install docker
+  - name: make sure docker is installed.
     apt:
-    - name: docker.io
+      name: docker.io
+      state: latest
