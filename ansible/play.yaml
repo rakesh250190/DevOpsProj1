@@ -13,4 +13,4 @@
   - name: start docker service.
     service:
       name: docker.io
-      state: Started
+      state: started
